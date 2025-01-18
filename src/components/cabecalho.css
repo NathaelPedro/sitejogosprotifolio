@@ -1,0 +1,29 @@
+.main-header {
+    background-color: #f4f4f4;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.main-header .logo h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.main-header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.main-header nav ul li a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.main-header nav ul li a:hover {
+    color: #0056b3;
+}
