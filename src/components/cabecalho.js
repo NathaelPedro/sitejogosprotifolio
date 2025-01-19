@@ -17,19 +17,19 @@ topo.innerHTML+=logo
 
 const abas=
     "<div id='abas' class='abas'>"+
-        "<ul>"+
-            "<li><a href='index.html'>Home</a></li>"+
-            "<li><a href='index.html'>Jogos</a></li>"+
-            "<li><a href='index.html'>Reviews</a></li>"+
-            "<li><a href='index.html'>Comunidades</a></li>"+
+        "<ul id='aba' class='aba'>"+
+            "<li class='aba'><a  class='aba' href='index.html'>Home</a></li>"+
+            "<li class='aba'><a  class='aba' href='index.html'>Jogos</a></li>"+
+            "<li class='aba'><a  class='aba' href='index.html'>Reviews</a></li>"+
+            "<li class='aba'><a  class='aba' href='index.html'>Comunidades</a></li>"+
         "</ul>"+
     "</div>"
 topo.innerHTML+=abas
     
 const lore=
     "<div id='lore' class='lore'>"+
-        "<button>Login</button>"+
-        "<button>Register</button>"+
+        "<button id='login' class='loginRegister'>Login</button>"+
+        "<button id='register' class='loginRegister'>Register</button>"+
     "</div>"
 topo.innerHTML+=lore
 
