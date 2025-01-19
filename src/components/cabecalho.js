@@ -9,10 +9,13 @@ topo.setAttribute("id","topo")
 topo.setAttribute("class","topo")
 body.prepend(topo)
 
-const cabeca=
+const logo=
     "<div id='logo' class='logo'>"+
         "<h1>Logo</h1>"+
-    "</div>"+
+    "</div>"
+topo.innerHTML+=logo
+
+const abas=
     "<div id='abas' class='abas'>"+
         "<ul>"+
             "<li><a href='index.html'>Home</a></li>"+
@@ -20,9 +23,13 @@ const cabeca=
             "<li><a href='index.html'>Reviews</a></li>"+
             "<li><a href='index.html'>Comunidades</a></li>"+
         "</ul>"+
-    "</div>"+
+    "</div>"
+topo.innerHTML+=abas
+    
+const lore=
     "<div id='lore' class='lore'>"+
         "<button>Login</button>"+
         "<button>Register</button>"+
     "</div>"
-topo.innerHTML+=cabeca
+topo.innerHTML+=lore
+
