@@ -11,7 +11,7 @@ body.prepend(topo)
 
 const cabeca=
     "<div id='logo' class='logo'>"+
-        "<h1>Hello World</h1>"+
+        "<h1>Logo</h1>"+
     "</div>"+
     "<div id='abas' class='abas'>"+
         "<ul>"+
