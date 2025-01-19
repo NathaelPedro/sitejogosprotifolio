@@ -12,5 +12,16 @@ body.prepend(topo)
 const cabeca=
     "<div id='logo' class='logo'>"+
         "<h1>Hello World</h1>"+
+    "</div>"+
+    "<div id='abas' class='abas'>"+
+        "<ul>"+
+            "<li><a href='index.html'>Home</a></li>"+
+            "<li><a href='index.html'>Jogos</a></li>"+
+            "<li><a href='index.html'>Videos</a></li>"+
+        "</ul>"+
+    "</div>"+
+    "<div id='lore' class='lore'>"+
+        "<button>Login</button>"+
+        "<button>Register</button>"+
     "</div>"
 topo.innerHTML+=cabeca
