@@ -17,7 +17,8 @@ const cabeca=
         "<ul>"+
             "<li><a href='index.html'>Home</a></li>"+
             "<li><a href='index.html'>Jogos</a></li>"+
-            "<li><a href='index.html'>Videos</a></li>"+
+            "<li><a href='index.html'>Reviews</a></li>"+
+            "<li><a href='index.html'>Comunidades</a></li>"+
         "</ul>"+
     "</div>"+
     "<div id='lore' class='lore'>"+
