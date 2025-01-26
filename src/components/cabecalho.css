@@ -5,7 +5,12 @@
 }
 
 body {
-    background: #034159;
+    background: #000000;
+    background-image: url(./Design\ Fundo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .topo {
@@ -14,7 +19,7 @@ body {
     justify-content: space-between;
     padding: 10px;
     margin: 20px auto;
-    background-color: #025951;
+    background-color: #03122e83;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     color: white;
@@ -46,6 +51,6 @@ ul {
 }
 
 li:hover {
-    background-color: #0cf25d36;
+    background-color: #0011ff44;
     border-radius: 5px;
 }
