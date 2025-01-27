@@ -25,15 +25,9 @@ body {
     color: white;
 }
 
-.logo {
- 
-        width: 150px; /* Ajuste o tamanho da logo */
-        height: auto; /* Mantém a proporção */
-        display: block; /* Centraliza a imagem */
-        margin: 0 auto; /* Centraliza horizontalmente */
-        background-color: transparent; /* Remove qualquer fundo adicional */
-        box-shadow: none; /* Remove sombras indesejadas */
-    
+.logo > h1 > img {
+        width:150px;
+        opacity: 10;
 }
 .lore {
     margin: auto 80px;
