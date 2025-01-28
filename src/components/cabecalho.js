@@ -12,7 +12,7 @@ body.prepend(topo);
 const logo = `
     <div id='logo' class='logo'> 
         <h1 id='logo'>
-            <img src="./src/components/logoSite.png" alt="Logo">
+            <img src="./src/components/Logo_imagem.png" alt="Logo">
         </h1>
     </div>
 `;
