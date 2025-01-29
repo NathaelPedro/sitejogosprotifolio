@@ -23,8 +23,15 @@ function adicionarLogo(topo) {
             <img src="./src/components/Logo_imagem.png" alt="Logo da empresa" />
         </h1>
     `;
+
+    
+    logoDiv.addEventListener("click", () => {
+        window.location.href = "index.html";
+    });
+
     topo.appendChild(logoDiv);
 }
+
 
 function adicionarAbas(topo) {
     const abasDiv = document.createElement("nav");
