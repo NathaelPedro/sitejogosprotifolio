@@ -1,39 +1,90 @@
-const head = document.head;
-const body = document.body;
+function adicionarEstilo() {
+    const estilo = document.createElement("link");
+    estilo.rel = "stylesheet";
+    estilo.type = "text/css";
+    estilo.href = "./src/components/cabecalho.css";
+    document.head.appendChild(estilo);
+}
 
-const estilo = "<link rel='stylesheet' type='text/css' href='./src/components/cabecalho.css'/>";
-head.innerHTML += estilo;
+function criarCabecalho() {
+    const topo = document.createElement("header");
+    topo.id = "topo";
+    topo.classList.add("topo");
+    document.body.prepend(topo);
+    return topo;
+}
 
-const topo = document.createElement("div");
-topo.setAttribute("id", "topo");
-topo.setAttribute("class", "topo");
-body.prepend(topo);
-
-const logo = `
-    <div id='logo' class='logo'> 
-        <h1 id='logo'>
-            <img src="./src/components/Logo_imagem.png" alt="Logo">
+function adicionarLogo(topo) {
+    const logoDiv = document.createElement("div");
+    logoDiv.id = "logo";
+    logoDiv.classList.add("logo");
+    logoDiv.innerHTML = `
+        <h1>
+            <img src="./src/components/Logo_imagem.png" alt="Logo da empresa" />
         </h1>
-    </div>
-`;
-topo.innerHTML += logo;
+    `;
+    topo.appendChild(logoDiv);
+}
 
-const abas = `
-    <div id='abas' class='abas'>
-        <ul id='aba' class='aba'>
-            <li class='aba'><a class='aba' href='index.html'>Home</a></li>
-            <li class='aba'><a class='aba' href='index.html'>Jogos</a></li>
-            <li class='aba'><a class='aba' href='index.html'>Reviews</a></li>
-            <li class='aba'><a class='aba' href='index.html'>Comunidades</a></li>
-        </ul>
-    </div>
-`;
-topo.innerHTML += abas;
+function adicionarAbas(topo) {
+    const abasDiv = document.createElement("nav");
+    abasDiv.id = "abas";
+    abasDiv.classList.add("abas");
 
-const lore = `
-    <div id='lore' class='lore'>
-        <button id='login' class='loginRegister'>Login</button>
-        <button id='register' class='loginRegister'>Register</button>
-    </div>
-`;
-topo.innerHTML += lore;
+    const lista = document.createElement("ul");
+    lista.id = "aba";
+    lista.classList.add("aba");
+
+    const itens = [
+        { texto: "Home", link: "index.html" },
+        { texto: "Jogos", link: "index.html" },
+        { texto: "Reviews", link: "index.html" },
+        { texto: "Comunidades", link: "index.html" }
+    ];
+
+    itens.forEach(item => {
+        const li = document.createElement("li");
+        li.classList.add("aba");
+
+        const a = document.createElement("a");
+        a.classList.add("aba");
+        a.href = item.link;
+        a.textContent = item.texto;
+
+        li.appendChild(a);
+        lista.appendChild(li);
+    });
+
+    abasDiv.appendChild(lista);
+    topo.appendChild(abasDiv);
+}
+
+function adicionarLore(topo) {
+    const loreDiv = document.createElement("div");
+    loreDiv.id = "lore";
+    loreDiv.classList.add("lore");
+
+    const loginButton = document.createElement("button");
+    loginButton.id = "login";
+    loginButton.classList.add("loginRegister");
+    loginButton.textContent = "Login";
+
+    const registerButton = document.createElement("button");
+    registerButton.id = "register";
+    registerButton.classList.add("loginRegister");
+    registerButton.textContent = "Register";
+
+    loreDiv.appendChild(loginButton);
+    loreDiv.appendChild(registerButton);
+    topo.appendChild(loreDiv);
+}
+
+function inicializarCabecalho() {
+    adicionarEstilo();
+    const topo = criarCabecalho();
+    adicionarLogo(topo);
+    adicionarAbas(topo);
+    adicionarLore(topo);
+}
+
+inicializarCabecalho();
