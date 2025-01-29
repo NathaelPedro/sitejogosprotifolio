@@ -10,7 +10,7 @@ baixo.setAttribute("class","baixo")
 body.prepend(baixo)
 
 const pe=
-    "<div id='logo' class='logo'>"+
-        "<h1>Logo</h1>"+
+    "<div id='roda' class='roda'>"+
+        "<h1>Site criado por dois Acéfalos, Filipi & Pedro</h1>"+
     "</div>"
 baixo.innerHTML+=pe
