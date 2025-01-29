@@ -67,15 +67,10 @@ function adicionarLore(topo) {
     const loginButton = document.createElement("button");
     loginButton.id = "loginButton";
     loginButton.classList.add("loginRegister");
-    loginButton.textContent = "Login";
+    loginButton.textContent = "Entrar";
 
-    const registerButton = document.createElement("button");
-    registerButton.id = "registerButton";
-    registerButton.classList.add("loginRegister");
-    registerButton.textContent = "Register";
 
     loreDiv.appendChild(loginButton);
-    loreDiv.appendChild(registerButton);
 
     topo.appendChild(loreDiv);
 }
