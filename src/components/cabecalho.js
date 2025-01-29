@@ -1,4 +1,3 @@
-// Função para adicionar o estilo ao documento
 function adicionarEstilo() {
     const estilo = document.createElement("link");
     estilo.rel = "stylesheet";
@@ -7,7 +6,6 @@ function adicionarEstilo() {
     document.head.appendChild(estilo);
 }
 
-// Função para criar o elemento de cabeçalho
 function criarCabecalho() {
     const topo = document.createElement("header");
     topo.id = "topo";
@@ -16,7 +14,6 @@ function criarCabecalho() {
     return topo;
 }
 
-// Função para adicionar o logo no cabeçalho
 function adicionarLogo(topo) {
     const logoDiv = document.createElement("div");
     logoDiv.id = "logo";
@@ -29,7 +26,6 @@ function adicionarLogo(topo) {
     topo.appendChild(logoDiv);
 }
 
-// Função para adicionar abas de navegação no cabeçalho
 function adicionarAbas(topo) {
     const abasDiv = document.createElement("nav");
     abasDiv.id = "abas";
@@ -63,32 +59,27 @@ function adicionarAbas(topo) {
     topo.appendChild(abasDiv);
 }
 
-// Função para adicionar os botões de login e registro no cabeçalho
 function adicionarLore(topo) {
     const loreDiv = document.createElement("div");
     loreDiv.id = "lore";
     loreDiv.classList.add("lore");
 
-    // Botão de login
     const loginButton = document.createElement("button");
     loginButton.id = "loginButton";
     loginButton.classList.add("loginRegister");
     loginButton.textContent = "Login";
 
-    // Botão de registro
     const registerButton = document.createElement("button");
     registerButton.id = "registerButton";
     registerButton.classList.add("loginRegister");
     registerButton.textContent = "Register";
 
-    // Adicionando os botões ao contêiner
     loreDiv.appendChild(loginButton);
     loreDiv.appendChild(registerButton);
 
     topo.appendChild(loreDiv);
 }
 
-// Função principal para inicializar o cabeçalho
 function inicializarCabecalho() {
     adicionarEstilo();
     const topo = criarCabecalho();
@@ -97,5 +88,4 @@ function inicializarCabecalho() {
     adicionarLore(topo);
 }
 
-// Inicializa o cabeçalho ao carregar o script
 inicializarCabecalho();
